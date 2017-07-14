@@ -1,5 +1,7 @@
 FROM ubuntu:17.10
 
+MAINTAINER theshamuel
+
 RUN \
   apt-get update && \
   apt-get install -y software-properties-common && \
