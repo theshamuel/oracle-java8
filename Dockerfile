@@ -1,9 +1,6 @@
 FROM ubuntu:17.10
 
-ADD etc/entrypoint.sh /entrypoint.sh
-
 RUN \
-  chmod +x /entrypoint.sh && \
   apt-get update && \
   apt-get install -y software-properties-common && \
   add-apt-repository -y ppa:webupd8team/java && \
